@@ -19,6 +19,8 @@
 function addTime(oldTime, milliSeconds){
     var newTime = new Date();
     var newValue= oldTime.getTime + milliSeconds;
+    var newTime=newValue.setTime();
+    return newTime;
 }
 
 
