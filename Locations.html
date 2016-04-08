@@ -14,6 +14,21 @@
         </title>
         
         <script src="zones.js"></script>
+        <!--STARTING THE WORLDCLOCK CALCULATION SCRIPT-->
+        <script type="text/javascript">
+            function worldClock(){
+                //MAKE VAR TODAY = CURRENT DATE
+                var today = new Date;
+                //CALCULATING THE OFFSET OF MY COMPUTERS CLOCK FROM GMT IN MINUTES
+                //CHANGING MINUTES TO MILLISECONDS
+                var offSet = today.getTimezoneOffset()*60*1000;
+                //CALLING THE ADDTIME FUNCTION TO CALCULATE THE 
+                //CURRENT DATE AND TIME IN GMT
+                var GMT = addTime(today,offSet);
+            }
+            
+        
+        </script>
         <link href="zones.css" rel="stylesheet" type="text/css"/>
     </head>
 
