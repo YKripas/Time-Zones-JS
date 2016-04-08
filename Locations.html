@@ -25,6 +25,21 @@
                 //CALLING THE ADDTIME FUNCTION TO CALCULATE THE 
                 //CURRENT DATE AND TIME IN GMT
                 var GMT = addTime(today,offSet);
+                
+                    //STARTING TO CALCULATE DIFFERENT LOCATIONS
+                    //DENVER
+                    var time1 = addTime(GMT,(-420)*60*1000);
+                    //LONDON
+                    var time2 = addTime(GMT, (-420)*60*1000);
+                    //NEW YORK
+                    var time3 = addTime(GMT, (-300)*60*1000);
+                    //SEATTLE
+                    var time4 = addTime(GMT, (-480)*60*1000);
+                    //SYDNEY
+                    var time5 = addTime(GMT, (660)*60*1000);
+                    //TOKYO
+                    var time6 = addTime(GMT, (540)*60*1000);
+                
             }
             
         
