@@ -28,7 +28,7 @@
                 
                     //STARTING TO CALCULATE DIFFERENT LOCATIONS
                     //DENVER
-                    var time1 = addTime(GMT,(-420)*60*1000);
+                    var time1 = addTime(GMT, (-420)*60*1000);
                     //LONDON
                     var time2 = addTime(GMT, (-420)*60*1000);
                     //NEW YORK
@@ -40,6 +40,11 @@
                     //TOKYO
                     var time6 = addTime(GMT, (540)*60*1000);
                 
+                //PUTTING THE TIMES INTO FIELDS
+                
+                
+                document.zones.place1.value = showTime(time1) ;
+                
             }
             
         
@@ -47,7 +52,7 @@
         <link href="zones.css" rel="stylesheet" type="text/css"/>
     </head>
 
-        <body>
+        <body onload="setInterval('worldClock()', 1000)">
             
             <style type="text/css" >
                 
@@ -81,8 +86,8 @@
 
 <div id="timemap">
 
-   <input id="place1" name="place1" size="7"  />
-   <input id="place2" name="place2" size="7"  />
+   <input id="place1" name="place1" size="7"   />
+    <input id="place2" name="place2" size="7"  />
    <input id="place3" name="place3" size="7"  />
    <input id="place4" name="place4" size="7"  />
    <input id="place5" name="place5" size="7"  />
