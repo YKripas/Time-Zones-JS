@@ -18,14 +18,14 @@
 
 function addTime(oldTime, milliSeconds){
     var newTime = new Date();
-    var newValue= oldTime.getTime + milliSeconds;
-    var newTime=newValue.setTime;
+    var newValue= oldTime.getTime() + milliSeconds;
+    newTime.setTime(newValue);
     return newTime;
 }
 
 function showTime(time){
-    thisMinute = time.getMinutes;
-    thisHour = time.getHours;
+    var thisMinute = time.getMinutes();
+    var thisHour = time.getHours();
     //IF THE HOUR IS < 12 SET THE VAR AMPM=AM OTHERWISE SET IT TO PM
     var ampm=(thisHour < 12) ? "AM" : "PM";
     //MAKE IT A 12 HOUR FORMAT NOT 24HR
