@@ -16,27 +16,24 @@
       hh:mm AM/PM
 */
 
-function addTime(oldTime, milliSeconds){
+function addTime(oldTime, milliSeconds) {
     var newTime = new Date();
-    var newValue= oldTime.getTime() + milliSeconds;
+    var newValue = oldTime.getTime() + milliSeconds;
     newTime.setTime(newValue);
     return newTime;
 }
 
-function showTime(time){
+function showTime(time) {
     var thisMinute = time.getMinutes();
     var thisHour = time.getHours();
     //IF THE HOUR IS < 12 SET THE VAR AMPM=AM OTHERWISE SET IT TO PM
-    var ampm=(thisHour < 12) ? "AM" : "PM";
+    var ampm = (thisHour < 12) ? "AM" : "PM";
     //MAKE IT A 12 HOUR FORMAT NOT 24HR
     thisHour = (thisHour > 12) ? thisHour - 12 : thisHour;
     //12 HOUR FORMAT
     thisHour = (thisHour == 0) ? 12 : thisHour;
     //IF MINUTES <10 ADD LEADING 0
-    thisMinute = (thisMinute < 10) ? "0" + thisMinute: thisMinute;
-        return thisHour + ":" + thisMinute + ":" + ampm;
-    
+    thisMinute = (thisMinute < 10) ? "0" + thisMinute : thisMinute;
+    return thisHour + ":" + thisMinute + ":" + ampm;
+
 }
-
-
-

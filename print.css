@@ -1,15 +1,14 @@
-nav{
-    display:none;
+nav {
+    display: none;
 }
-#content{
+#content {
     margin-left: 0px;
 }
-body{
+body {
     backface-visibility: hidden;
     margin: 0px;
     padding: 0px;
-        
 }
-#layout{
+#layout {
     border: 0px;
 }
